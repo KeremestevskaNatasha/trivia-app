@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:background="@color/colorAccent"
+	android:orientation="vertical"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:padding="16dp">
+	
+	<TextView
+		android:id="@+id/tvNumbOfQuestion"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_margin="10dp"
+		android:textColor="@color/colorPrimaryDark"
+		android:text="Number Of Questions :"
+		android:textSize="20dp"/>
+	
+	
+	<EditText
+		
+		android:id="@+id/number_of_questions"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_margin="10dp"
+		android:background="@android:color/white"
+		android:inputType="number" />
+	
+	<TextView
+		android:id="@+id/tvSelectCategory"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_margin="10dp"
+		android:textColor="@color/colorPrimaryDark"
+		android:text=" Select Category :"
+		android:textSize="20dp"
+		/>
+	
+	<Spinner
+		android:id="@+id/select_category"
+		android:background="@android:color/white"
+		android:entries="@array/value_category"
+		android:layout_margin="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:src="@drawable/ic_unfold_more"
+		/>
+	
+	
+	<TextView
+		android:id="@+id/tvSelectDifficulty"
+	    android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_margin="10dp"
+		android:textColor="@color/colorPrimaryDark"
+		android:text="Select Difficulty :"
+		android:textSize="20dp"/>
+	
+	<Spinner
+		android:id="@+id/select_difficulty"
+		android:background="@android:color/white"
+		android:entries="@array/value_difficulty"
+		android:layout_margin="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:src="@drawable/ic_unfold_more"
+		/>
+	
+	
+	<Button
+		
+		android:id="@+id/btn_start"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_margin="10dp"
+		android:text="Start"
+		android:textColor="@color/colorPrimaryDark">
+	
+	</Button>
+
+</LinearLayout>
